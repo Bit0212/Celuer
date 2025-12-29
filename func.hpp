@@ -265,7 +265,7 @@ class calculator {
   void CelcaFahexec() {
     while (true) {
       deltex();
-      int dec = 1;
+      int dec = 0;
       double celsius = 0;
       std::cout << "hola bienvenido al convertidor de celsius a fahrenheit, "
                    "porfavor ingrese los grados celsius"
@@ -274,6 +274,7 @@ class calculator {
       std::cout << "En grados fahrenheit es :" << celfah(celsius) << std::endl;
       std::cout << "desea seguir convirtiendo mas grados celsius a fahrenheit? "
                    "(1 para si 2 para no)";
+      std::cin >> dec;
       if (dec == 1) {
         continue;
       } else {
@@ -285,15 +286,16 @@ class calculator {
   void CelcaKelexec() {
     while (true) {
       deltex();
-      int dec = 1;
+      int dec = 0;
       double celsius = 0;
       std::cout << "hola bienvenido al convertidor de celsius a kelvin, "
                    "porfavor ingrese los grados celsius"
                 << std::endl;
       std::cin >> celsius;
       std::cout << "En grados kelvin es :" << celkel(celsius) << std::endl;
-      std::cout << "desea seguir convirtiendo mas grados celsius a kelvin? (1 "
-                   "para si 2 para no)";
+      std::cout << "desea seguir convirtiendo mas grados celsius a kelvin? "
+                   "(1para si 2 para no)";
+      std::cin >> dec;
       if (dec == 1) {
         continue;
       } else {
