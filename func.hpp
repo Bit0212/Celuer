@@ -184,6 +184,7 @@ class calculator {
       std::cout << "deseas continuar con los triangulitos o deseas irte?(1 "
                    "para irte, 2 para seguir)"
                 << std::endl;
+      std::cin >> decisi6;
       if (decisi6 == 1) {
         break;
 
